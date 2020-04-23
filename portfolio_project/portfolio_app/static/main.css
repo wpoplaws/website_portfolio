@@ -1,0 +1,63 @@
+body {
+/*background: url("/static/img/back.png") */
+font-family:"Lucida Console", Monaco, monospace;
+color:#D3D3D3;
+background-size: cover;
+background: #585858;
+background-repeat: no-repeat;
+background-attachment: fixed;
+margin-bottom: 60px;
+
+}
+.top a{
+color:#D3D3D3;
+padding:20px;}
+
+.top a:hover{
+color:#a9a9a9;}
+
+
+.container{
+
+width:65%;
+margin: auto;
+margin-top:0px;
+height:3000px;
+background:#F0F0F0	;}
+
+.top{
+text-decoration: none;
+background:#585858;
+height:90px;
+margin-left:0px;
+position:relative
+
+}
+.top img {
+bottom: 10%;
+position:absolute;
+}
+.top-right{
+height:100%;
+text-align:right;
+margin-top:25px;
+text-decoration: none;
+
+}
+
+.top-left{
+height:100%;
+}
+
+
+
+.head{
+margin:auto;
+margin-top:24px;
+height:300px;
+width:95%;
+background: #D3D3D3	;
+border-style: groove;
+
+
+}
