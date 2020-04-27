@@ -1,32 +1,122 @@
-{% load static %}
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'main.css' %}">
-    <title>Title</title>
+    <meta charset="utf-8">
+
+    <title> Hi I'm Wojciech Popławski</title>
+    <meta name="description" content="Personal portfolio">
+    <meta name="author" content="Wojciech Popławski">
+    <link rel="stylesheet" href="static/main.css">
+    <script src="https://kit.fontawesome.com/f653ad804a.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+
 </head>
+
 <body>
-<div class="container">
-    <div class="top">
+<ul class="navigation">
+    <li><a href="{% url 'main' %}">|home</a></li>
+    <li><a href="{% url 'portfolio' %}">|portfolio</a></li>
+    <li><a href="{% url 'resume' %}">|resume</a></li>
 
-
-        <div class="top-left" style="width: 35%; float:left">
-            <img src="/static/img/logo.svg" alt="Avatar" style="height:70px;">
+</ul>
+<div class="container" role="main">
+    <div class="header">
+        <div class="header-left">
+            <img src="/static/img/avatar.png" alt="Avatar"
+                 style="height:220px;">
         </div>
+        <div class="header-right">
+            <h1>Wojciech Popławski</h1>
+            <p>Junior Django Developer</p>
+            <div class="gl">
+                <div class="grid-item"><a href="https://github.com/wpoplaws" target="_blank"><i class="fa fa-github"
+                                                                                                aria-hidden="true"></i>GitHub</a>
+                    <div class="grid-item"><a href="https://www.linkedin.com/in/wojciech-popławski-7882b3182"
+                                              target="_blank"><i class="fab fa-linkedin"
 
-        <div class="top-right" style="width: 65%; float:right">
-            <a href="google.pl"  style="text-decoration : none; ">|home </a>
-            <a href="google.pl"  style="text-decoration : none; ">|portfolio </a>
-            <a href="google.pl"  style="text-decoration : none; ">|resume </a>
+                                                                 aria-hidden="true"></i>Linkedin</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="aboutme">
+            <h1>ABOUT ME</h1>
+            <p style="font-weight:bold;"> Helo, I’m Wojciech Popławski!</p>
+            <p> I am Wojciech Poplawski aand asdasd a sda sh gjhg Lorem Ipsum jest tekstem stosowanym jako przykładowy
+                wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do
+                wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym,
+                pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy
+                Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum
+                oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker</p>
+        </div>
+        <div class="informations">
+            <div class="linfo">
+                <h1>personal informations</h1>
+                <p style="font-weight:normal;">FULL NAME : Wojciech Popławski</p>
+                <p style="font-weight:normal;">D.O.B. : 27 Dec 1994</p>
+                <p style="font-weight:normal;">ADDRESS : Poland, Lublin</p>
+
+            </div>
+            <div class="rinfo">
+                <h1>&nbsp;</h1>
+                <p style="font-weight:normal;">E-MAIL : <a style="text-decoration: none; color:black;"
+                                                           href="mailto:wojciechpoplawski94@gmail.com">wojciechpoplawski94@gmail.com</a>
+                </p>
+                <p style="font-weight:normal;">PHONE : +48 667 796 102</p>
+                <p style="font-weight:normal;">GITHUB : <a style="text-decoration: none; color:black;"
+                                                           href="https://github.com/wpoplaws" target="_blank"><i
+                        class="fa fa-github"
+                        aria-hidden="true"></i>wpoplaws</a>
+                </p>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="lskill">
+                <h1>skills</h1>
+                <p style="font-weight:normal;">Python / Django</p>
+                <p style="font-weight:normal;">HTML / CSS</p>
+                <p style="font-weight:normal;">GIS</p>
+            </div>
+
+            <div class="rskill">
+                <h1>languages</h1>
+                <p style="font-weight:normal;">POLISH : native</p>
+                <p style="font-weight:normal;">ENGLISH : intermediate</p>
+            </div>
+        </div>
+        <div class="character">
+            <div class="lcharacter">
+                <h1>character</h1>
+                <p style="font-weight:normal;">Creative</p>
+                <p style="font-weight:normal;">Talkative</p>
+                <p style="font-weight:normal;">Energetic</p>
+                <p style="font-weight:normal;">Patient</p>
+                <p style="font-weight:normal;">Relaxed</p>
+            </div>
+
+            <div class="rcharacter">
+                <h1>interests</h1>
+                <p style="font-weight:normal;">Low-cost travelling</p>
+                <p style="font-weight:normal;">Music production</p>
+                <p style="font-weight:normal;">Bushcraft</p>
+                <p style="font-weight:normal;">Workout</p>
+                <p style="font-weight:normal;">FIFA</p>
+            </div>
+
 
         </div>
     </div>
-    <div class="head">
 
-
-    </div>
 </div>
+<p id="footer">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a></p>
 
 
 </body>

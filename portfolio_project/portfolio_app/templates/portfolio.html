@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title> Hi I'm Wojciech Popławski</title>
+    <meta name="description" content="Personal portfolio">
+    <meta name="author" content="Wojciech Popławski">
+    <link rel="stylesheet" href="static/main.css">
+    <script src="https://kit.fontawesome.com/f653ad804a.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+<ul class="navigation">
+    <li><a href="{% url 'main' %}">|home</a></li>
+    <li><a href="{% url 'portfolio' %}">|portfolio</a></li>
+    <li><a href="{% url 'resume' %}">|resume</a></li>
+
+</ul>
+<div class="container" role="main">
+    <div class="header">
+        <div class="header-left">
+            <img src="/static/img/avatar.png" alt="Avatar"
+                 style="height:220px;">
+        </div>
+        <div class="header-right">
+            <h1>Wojciech Popławski</h1>
+            <p>Junior Django Developer</p>
+            <div class="gl">
+                <div class="grid-item"><a href="https://github.com/wpoplaws" target="_blank"><i class="fa fa-github"
+                                                                                                aria-hidden="true"></i>GitHub</a>
+                    <div class="grid-item"><a href="https://www.linkedin.com/in/wojciech-popławski-7882b3182"
+                                              target="_blank"><i class="fab fa-linkedin"
+
+                                                                 aria-hidden="true"></i>Linkedin</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="aboutme">
+            <h1>Blog aplication</h1>
+            <img src="/static/img/blog.png" alt="blog"
+                 style="height:300px;">
+
+            <div class="grid-item"><a href="https://wpoplaws.herokuapp.com/" target="_blank"><i
+                    class="fas fa-window-restore"
+                    aria-hidden="true"></i>Blog</a>
+                <div class="grid-item"><a href="https://github.com/wpoplaws/django_blog" target="_blank"><i
+                        class="fa fa-github"
+                        aria-hidden="true"></i>GitHub repository</a>
+                </div>
+            </div>
+        </div>
+        <div class="aboutme">
+            <h1>Check the weather aplication</h1>
+            <img src="/static/img/checker.png" alt="checker"
+                 style="height:300px;">
+
+            <div class="grid-item"><a href="https://theweatherchecker.herokuapp.com/" target="_blank"><i
+                    class="fas fa-window-restore"
+                    aria-hidden="true"></i>Aplication</a>
+                <div class="grid-item"><a href="https://github.com/wpoplaws/weather" target="_blank"><i
+                        class="fa fa-github"
+                        aria-hidden="true"></i>GitHub repository</a>
+                </div>
+            </div>
+        </div>
+        <div class="aboutme">
+            <h1>Resume website</h1>
+            <img src="/static/img/web.png" alt="web"
+                 style="height:300px;">
+
+            <div class="grid-item"><a href="https://theweatherchecker.herokuapp.com/" target="_blank"><i
+                    class="fas fa-window-restore"
+                    aria-hidden="true"></i>Website with portfolio</a>
+                <div class="grid-item"><a href="https://github.com/wpoplaws/my_website" target="_blank"><i
+                        class="fa fa-github"
+                        aria-hidden="true"></i>GitHub repository</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+<p id="footer">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a></p>
+
+
+</body>
+</html>

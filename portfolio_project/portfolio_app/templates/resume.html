@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title> Hi I'm Wojciech Popławski</title>
+    <meta name="description" content="Personal portfolio">
+    <meta name="author" content="Wojciech Popławski">
+    <link rel="stylesheet" href="static/main.css">
+    <script src="https://kit.fontawesome.com/f653ad804a.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<ul class="navigation">
+    <li><a href="{% url 'main' %}">|home</a></li>
+    <li><a href="{% url 'portfolio' %}">|portfolio</a></li>
+    <li><a href="{% url 'resume' %}">|resume</a></li>
+</ul>
+<div class="container" role="main">
+    <div class="header">
+        <div class="header-left">
+            <img src="/static/img/avatar.png" alt="Avatar"
+                 style="height:220px;">
+        </div>
+        <div class="header-right">
+            <h1>Wojciech Popławski</h1>
+            <p>Junior Django Developer</p>
+            <div class="gl">
+                <div class="grid-item"><a href="https://github.com/wpoplaws" target="_blank"><i class="fa fa-github"
+                                                                                                aria-hidden="true"></i>GitHub</a>
+                    <div class="grid-item"><a href="https://www.linkedin.com/in/wojciech-popławski-7882b3182"
+                                              target="_blank"><i class="fab fa-linkedin"
+
+                                                                 aria-hidden="true"></i>Linkedin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="aboutme">
+            <h1>ABOUT ME</h1>
+            <p style="font-weight:bold;"> Helo, I’m Wojciech Popławski!</p>
+            <p> I am Wojciech Poplawski aand asdasd a sda sh gjhg Lorem Ipsum jest tekstem stosowanym jako przykładowy
+                wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do
+                wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym,
+                pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy
+                Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum
+                oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker</p>
+        </div>
+    </div>
+</div>
+
+</div>
+<p id="footer">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a></p>
+</body>
+</html>
